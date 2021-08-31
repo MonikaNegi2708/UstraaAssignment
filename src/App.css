@@ -1,0 +1,162 @@
+
+body{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Header css */
+
+.header-outer-box{
+  padding: 3.4vw;
+}
+
+.heading{
+  color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.sub-heading{ 
+  color: #757575;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 20px;
+}
+
+
+/* Category Tabs Css */
+
+.category-outer-box{
+  padding: 10px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  overflow-y: auto;
+}
+
+.cat-tab{
+  position: relative;
+}
+
+.category-outer-box img{
+  height: 100px;
+  position: relative;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.category-outer-box .cat-tab:last-child img{
+  margin: 0px;
+}
+
+.category-outer-box img + span{
+  color: #ffffff;
+  font-size: 4.5vw;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+}
+
+/* --------------------- */
+
+/* product css */
+
+.product-outer-box{
+  padding: 20px;
+  display: flex;
+}
+
+.product-outer-box img{
+height: 100px;
+}
+
+.content{
+  margin-left: 10px;
+}
+
+.content p{
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+
+.content .product-heading{
+  font-size: 3.4vw;
+  font-weight: 500;
+  display: inline-block;
+  width: 150px;
+}
+
+.content .product-heading + span{
+  position: absolute;
+  right: 30px;
+}
+
+.content .product-quantity{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.content .product-price{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.content .product-price del{
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.content button.active{
+    background-color: rgb(79, 207, 100) !important;
+}
+
+.content button.disabled{
+  background-color: #b0b0b0 !important;
+  color: white;
+}
+
+/* --------------- */
+
+/* footer Css*/
+
+.footer-outer-box{
+  padding: 10px;
+  display: flex;
+}
+
+.footer-outer-box .heading{
+  margin: 0px;
+  font-size: 3.4vw;
+  font-weight: 400;
+  margin-left: 25px;
+  line-height: 2;
+}
+
+.footer-outer-box .heading span{
+  font-weight: 500;
+  margin-left: 3.4vw;
+}
+
+.footer-outer-box .other-option{
+  margin: 0px;
+  font-size: 2.8vw;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.footer-outer-box .other-option Button{
+  font-weight: 500;
+  margin-left: 3.4vw;
+  padding: 0px;
+  text-transform:capitalize;
+}
