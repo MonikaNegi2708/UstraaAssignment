@@ -8,9 +8,9 @@ class Products extends React.Component {
 				{this.props.productList.map((el, index) => <div key={index} className="product-outer-box">
 					<img src={el.image_urls.x520} alt={el.alt_text} />
 					<div className="content">
-						<p className="product-heading">{el.name}</p><span>{el.rating ? <React.Fragment>{el.rating} &#9733;</React.Fragment> : "--"}</span>
-						<p className="product-quantity">{`${el.weight} ${el.weight_unit}`}</p>
-						<p className="product-price">₹ {el.final_price_new} <del>₹ {el.final_price}</del></p>
+						<p className="product-heading">{el.name}</p><span>{el.rating && <React.Fragment>{el.rating} &#9733;</React.Fragment>}</span>
+						<p className="product-quantity">{el.weight ? `${el.weight} ${el.weight_unit}` : null}</p>
+						<p className="product-price">{el.final_price_new ? <React.Fragment>₹ {el.final_price_new} <del>₹ {el.final_price}</del></React.Fragment> : `₹ ${el.final_price}`}</p>
 						{el.is_in_stock ?
 							<Button className="active">
 								ADD TO CART

@@ -84,6 +84,7 @@ class Category extends React.Component {
 			<div className="category-outer-box">
 				{this.props.categoryList.map(el => <div
 					key={el.category_id}
+					id={el.category_name.trim()}
 					className="cat-tab"
 					onClick={() => this.onCategoryClickHandler(el.category_id, el.category_name)}
 				>
@@ -114,9 +115,9 @@ class Category extends React.Component {
 					open={Boolean(this.state.anchorEl)}
 					onClose={this.onCloseHandler}
 				>
-					{this.props.categoryList.map(val => <MenuItem
+					{this.props.categoryList.map(val => <a href={"#" + val.category_name.trim()}> <MenuItem
 						key={val.category_id}
-						onClick={() => this.onCloseHandler(val.category_name, val.category_id)}>{val.category_name}</MenuItem> )}
+						onClick={() => this.onCloseHandler(val.category_name, val.category_id)}>{val.category_name}</MenuItem> </a>)}
 				</Menu>
 			</div>
 		</React.Fragment >
