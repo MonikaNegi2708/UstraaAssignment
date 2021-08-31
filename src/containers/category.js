@@ -85,7 +85,7 @@ class Category extends React.Component {
 				{this.props.categoryList.map(el => <div
 					key={el.category_id}
 					id={el.category_name.trim()}
-					className="cat-tab"
+					className="category-tabs"
 					onClick={() => this.onCategoryClickHandler(el.category_id, el.category_name)}
 				>
 					<img src={el.category_image} alt="category Img" />
@@ -102,14 +102,14 @@ class Category extends React.Component {
 						categoryList={this.props.categoryList} />
 					: <div>No results found !</div>
 			}
-			<div className="footer-outer-box">
+			<div className="footer">
 				<p className="heading">Showing results for : <span>{this.state.categoryName}</span></p>
-				<div className="other-option">
+				<div className="footer-options">
 					<Button onClick={this.changeCategoryHandler}>Change</Button>
 					<Button onClick={this.viewAllHandler}>{this.state.viewAll ? '[-] View Less' : '[+] View More'}</Button>
 				</div>
 				<Menu
-					id="simple-menu"
+					id="category-menu"
 					anchorEl={this.state.anchorEl}
 					keepMounted
 					open={Boolean(this.state.anchorEl)}

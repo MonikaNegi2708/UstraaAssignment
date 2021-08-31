@@ -32,32 +32,31 @@ body{
 /* Category Tabs Css */
 
 .category-outer-box{
-  padding: 10px;
-  height: 100px;
+  padding-bottom: 5px;
+  margin-left:10px;
   display: flex;
-  flex-direction: row;
-  width: 95%;
-  overflow-y: auto;
+  overflow-x: scroll;
 }
 
-.cat-tab{
+.category-tabs{
   position: relative;
+  padding:10px;
+  display: block;
+  width:auto;
+  height:100px;
+  border-radius: 50px;
 }
 
 .category-outer-box img{
   height: 100px;
   position: relative;
-  border-radius: 4px;
+  border-radius: 4px; 
   margin-right: 10px;
-}
-
-.category-outer-box .cat-tab:last-child img{
-  margin: 0px;
 }
 
 .category-outer-box img + span{
   color: #ffffff;
-  font-size: 4.5vw;
+  font-size: 20px;
   font-weight: 500;
   position: absolute;
   top: 50%;
@@ -73,6 +72,8 @@ body{
 .product-outer-box{
   padding: 20px;
   display: flex;
+  padding-right: 72px;
+  position: relative;
 }
 
 .product-outer-box img{
@@ -93,12 +94,12 @@ height: 100px;
   font-size: 3.4vw;
   font-weight: 500;
   display: inline-block;
-  width: 150px;
+  /* width: 150px; */
 }
 
 .content .product-heading + span{
   position: absolute;
-  right: 30px;
+  right: 25px;
 }
 
 .content .product-quantity{
@@ -129,12 +130,12 @@ height: 100px;
 
 /* footer Css*/
 
-.footer-outer-box{
+.footer{
   padding: 10px;
   display: flex;
 }
 
-.footer-outer-box .heading{
+.footer .heading{
   margin: 0px;
   font-size: 3.4vw;
   font-weight: 400;
@@ -142,19 +143,19 @@ height: 100px;
   line-height: 2;
 }
 
-.footer-outer-box .heading span{
+.footer .heading span{
   font-weight: 500;
   margin-left: 3.4vw;
 }
 
-.footer-outer-box .other-option{
+.footer .footer-options{
   margin: 0px;
   font-size: 2.8vw;
   font-weight: 400;
   line-height: 2;
 }
 
-.footer-outer-box .other-option Button{
+.footer .footer-options Button{
   font-weight: 500;
   margin-left: 3.4vw;
   padding: 0px;
